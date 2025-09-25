@@ -1,4 +1,4 @@
-# 👋 Xin chào, mình là Nguyễn Văn Hùng  
+# ✨ Heyy, mình là Trần Văn Hùng ✨
 
 🎓 Sinh viên Khoa **Khoa học Máy tính**  
 💻 Đang học tại **Trường ĐH Công nghệ thông tin, ĐHQG TP Hồ Chí Minh**  
