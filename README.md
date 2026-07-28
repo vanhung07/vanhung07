@@ -2,7 +2,7 @@
 
 🎓 Sinh viên Khoa **Khoa học Máy tính**  
 💻 Đang học tại **Trường ĐH Công nghệ thông tin, ĐHQG TP Hồ Chí Minh**  
-🚀 Mục tiêu: trở thành 1 **Data Scientist**
+🚀 Mục tiêu: trở thành 1 **AI Engineer**
 
 ---
 
