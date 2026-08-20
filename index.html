@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Minh Khang — Sinh viên CNTT</title>
+<meta name="description" content="Trang cá nhân của Nguyễn Minh Khang — sinh viên Công nghệ thông tin, lập trình viên.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Gutter: dòng số dạng trình soạn thảo code, chạy dọc theo toàn trang -->
+  <div class="gutter" aria-hidden="true" id="gutter"></div>
+
+  <div class="page">
+
+    <!-- STATUS BAR -->
+    <header class="statusbar">
+      <div class="statusbar__inner">
+        <span class="statusbar__cmd">&gt; whoami</span>
+        <span class="statusbar__dot">·</span>
+        <span>sinh_vien_cntt</span>
+        <span class="statusbar__dot">·</span>
+        <span>Đà Lạt, VN</span>
+        <span class="statusbar__dot">·</span>
+        <span class="statusbar__status"><i></i>đang mở nhận việc thực tập</span>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <p class="hero__label">// trang-ca-nhan.hero</p>
+      <h1 class="hero__name">Nguyễn Minh Khang<span class="cursor">_</span></h1>
+      <p class="hero__role">Sinh viên năm 3 · Khoa học Máy tính — chuyên tâm vào backend &amp; hệ thống</p>
+      <p class="hero__desc">
+        Mình thích biến những bài toán rối rắm thành hệ thống chạy gọn gàng.
+        Đang học tại Đại học Bách Khoa, hiện tập trung vào Go, cơ sở dữ liệu phân tán
+        và những dự án nho nhỏ chạy được thật, không chỉ nằm trên slide.
+      </p>
+      <nav class="hero__links">
+        <a href="mailto:khang.nguyen@example.com" class="chip">✉ email</a>
+        <a href="https://github.com/yourusername" class="chip" target="_blank" rel="noopener">⌥ github</a>
+        <a href="https://linkedin.com/in/yourusername" class="chip" target="_blank" rel="noopener">in linkedin</a>
+        <a href="/cv-nguyen-minh-khang.pdf" class="chip" target="_blank" rel="noopener">↓ cv.pdf</a>
+      </nav>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section reveal" id="about">
+      <h2 class="section__title"><span class="mono-tag">ABOUT</span> Vài dòng về mình</h2>
+      <div class="section__body">
+        <p>
+          Mình bắt đầu lập trình từ năm nhất khi tự mày mò làm một con bot Discord
+          cho câu lạc bộ — từ đó mê luôn việc xây dựng thứ gì đó người khác dùng được.
+          Hiện mình vừa học trên trường, vừa làm cộng tác viên phát triển cho một
+          startup nhỏ về logistics.
+        </p>
+        <p>
+          Mình tin vào việc viết code dễ đọc hơn là code "khôn lỏi", và thích
+          debug hơn là thích viết tính năng mới — nghe hơi lạ nhưng đúng là vậy.
+        </p>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="section reveal" id="stack">
+      <h2 class="section__title"><span class="mono-tag">STACK</span> Công nghệ hay dùng</h2>
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Ngôn ngữ</h3>
+          <ul>
+            <li>Go</li>
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>C++</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Backend &amp; hạ tầng</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+            <li>Docker</li>
+            <li>Nginx</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Frontend</h3>
+          <ul>
+            <li>React</li>
+            <li>Tailwind CSS</li>
+            <li>Vite</li>
+          </ul>
+        </div>
+        <div class="stack-group">
+          <h3>Công cụ</h3>
+          <ul>
+            <li>Git / GitHub</li>
+            <li>Linux</li>
+            <li>Postman</li>
+            <li>Figma (cơ bản)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILD LOG (Projects) -->
+    <section class="section reveal" id="projects">
+      <h2 class="section__title"><span class="mono-tag">BUILD LOG</span> Dự án đã làm</h2>
+      <div class="projects">
+
+        <article class="project">
+          <div class="project__head">
+            <h3>Trình rút gọn URL có thống kê</h3>
+            <div class="project__links">
+              <a href="https://github.com/yourusername/url-shortener" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>
+            Dịch vụ rút gọn liên kết tự viết bằng Go, có theo dõi lượt click theo
+            thời gian thực và giới hạn tốc độ truy cập bằng Redis. Xử lý khoảng
+            10.000 lượt redirect/ngày trong lúc thử tải.
+          </p>
+          <div class="project__tags">
+            <span>Go</span><span>PostgreSQL</span><span>Redis</span><span>Docker</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <h3>Bảng điều khiển quản lý chi tiêu nhóm</h3>
+            <div class="project__links">
+              <a href="https://github.com/yourusername/expense-dashboard" target="_blank" rel="noopener">code</a>
+              <a href="#" target="_blank" rel="noopener">demo</a>
+            </div>
+          </div>
+          <p>
+            Ứng dụng web giúp nhóm sinh viên chia và theo dõi chi tiêu chung khi
+            đi thực tế. Có biểu đồ trực quan và xuất báo cáo PDF cuối kỳ.
+          </p>
+          <div class="project__tags">
+            <span>React</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__head">
+            <h3>CLI đồng bộ ghi chú Markdown</h3>
+            <div class="project__links">
+              <a href="https://github.com/yourusername/notes-sync-cli" target="_blank" rel="noopener">code</a>
+            </div>
+          </div>
+          <p>
+            Công cụ dòng lệnh tự viết để đồng bộ ghi chú Markdown giữa máy tính
+            và một kho Git riêng, có phát hiện xung đột và merge cơ bản.
+          </p>
+          <div class="project__tags">
+            <span>Python</span><span>Git</span><span>CLI</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section reveal" id="timeline">
+      <h2 class="section__title"><span class="mono-tag">TIMELINE</span> Học tập &amp; kinh nghiệm</h2>
+      <div class="timeline">
+        <div class="timeline__item">
+          <span class="timeline__date">2024 — nay</span>
+          <div class="timeline__content">
+            <h3>Cộng tác viên phát triển backend</h3>
+            <p>Công ty Logistics ABC · Xây dựng API nội bộ cho hệ thống theo dõi đơn hàng.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__date">2023 — 2024</span>
+          <div class="timeline__content">
+            <h3>Thành viên CLB Lập trình</h3>
+            <p>Đại học Bách Khoa · Tổ chức 2 buổi workshop Git &amp; Docker cho tân sinh viên.</p>
+          </div>
+        </div>
+        <div class="timeline__item">
+          <span class="timeline__date">2022 — nay</span>
+          <div class="timeline__content">
+            <h3>Cử nhân Khoa học Máy tính</h3>
+            <p>Đại học Bách Khoa · GPA hiện tại 3.6/4.0 · Dự kiến tốt nghiệp 2026.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer class="footer reveal" id="contact">
+      <h2 class="section__title"><span class="mono-tag">CONTACT</span> Kết nối với mình</h2>
+      <p class="footer__text">
+        Đang tìm cơ hội thực tập hoặc dự án hay ho để tham gia.
+        Nhắn mình một câu, mình trả lời trong vòng 24 giờ.
+      </p>
+      <a href="mailto:khang.nguyen@example.com" class="footer__cta">&gt; ping me — khang.nguyen@example.com</a>
+      <div class="footer__meta">
+        <span>© 2026 Nguyễn Minh Khang</span>
+        <span class="statusbar__dot">·</span>
+        <span>build từ HTML/CSS thuần</span>
+      </div>
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
