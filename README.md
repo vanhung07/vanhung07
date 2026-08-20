@@ -6,8 +6,8 @@
 
 ---
 
-## 🔧 Kỹ năng
-- Ngôn ngữ: C++ 
+## Program Language 
+- Ngôn ngữ: C++, Python, SQL 
 
 ---
 ## 📫 Liên hệ
